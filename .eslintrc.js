@@ -3,17 +3,14 @@ module.exports = {
     browser: true,
     es6: true,
   },
-  extends: [
-    'airbnb-base',
-  ],
+  extends: ['standard'],
   globals: {
+    use: true,
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: 'module',
   },
-  rules: {
-  },
+  rules: {},
 };

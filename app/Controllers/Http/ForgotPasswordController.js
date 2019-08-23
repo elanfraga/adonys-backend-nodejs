@@ -4,7 +4,7 @@ const crypto = require('crypto')
 const User = use('App/Models/User')
 
 class ForgotPasswordController {
-  async store ({ request, response }) {
+  async store({ request, response }) {
     try {
       const email = request.input('email')
       const user = await User.findByOrFail('email', email)
